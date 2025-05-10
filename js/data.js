@@ -1,5 +1,5 @@
 // Trust system data
-// Auto-generated on 2025-05-10 14:34:35
+// Auto-generated on 2025-05-10 14:52:17
 // DO NOT EDIT MANUALLY
 
 const trustData = {
@@ -7,168 +7,140 @@ const trustData = {
   "users": [
     {
       "username": "tech_guru",
-      "trustScore": 0.08252158486102895,
-      "trustors": 6,
-      "trustees": 3,
+      "trustScore": 0.03782491353631474,
+      "trustors": 5,
+      "trustees": 4,
       "interests": [
-        "physics",
-        "programming",
-        "tech"
+        "space",
+        "science",
+        "programming"
       ],
       "communityId": 1
     },
     {
       "username": "science_fan",
-      "trustScore": 0.06582816592041901,
-      "trustors": 7,
-      "trustees": 8,
+      "trustScore": 0.02934847364107074,
+      "trustors": 3,
+      "trustees": 3,
       "interests": [
-        "science",
-        "math"
+        "tech",
+        "math",
+        "physics"
       ],
       "communityId": 1
     },
     {
       "username": "ai_researcher",
-      "trustScore": 0.02412841091492776,
-      "trustors": 7,
+      "trustScore": 0.093241638511825,
+      "trustors": 5,
       "trustees": 7,
       "interests": [
-        "programming",
-        "AI",
+        "physics",
         "tech"
       ],
       "communityId": 1
     },
     {
       "username": "code_master",
-      "trustScore": 0.0648143955394103,
-      "trustors": 6,
-      "trustees": 6,
+      "trustScore": 0.0818864077087623,
+      "trustors": 10,
+      "trustees": 3,
       "interests": [
         "programming",
         "space",
-        "AI",
-        "physics"
+        "physics",
+        "science"
       ],
       "communityId": 1
     },
     {
       "username": "data_analyst",
-      "trustScore": 0.04345763284616033,
-      "trustors": 4,
-      "trustees": 5,
+      "trustScore": 0.03558585394134462,
+      "trustors": 6,
+      "trustees": 8,
       "interests": [
-        "tech",
-        "physics",
-        "space",
-        "AI"
+        "math",
+        "tech"
       ],
       "communityId": 1
     },
     {
       "username": "ufo_believer",
-      "trustScore": 0.02189811607670862,
-      "trustors": 4,
-      "trustees": 6,
+      "trustScore": 0.022791227684372556,
+      "trustors": 6,
+      "trustees": 3,
       "interests": [
-        "UFOs",
-        "space",
-        "truth",
-        "aliens"
-      ],
-      "communityId": 2
-    },
-    {
-      "username": "conspiracy_buff",
-      "trustScore": 0.033455098420207816,
-      "trustors": 4,
-      "trustees": 4,
-      "interests": [
-        "UFOs",
-        "space",
-        "conspiracy",
+        "aliens",
         "government"
       ],
       "communityId": 2
     },
     {
-      "username": "alien_hunter",
-      "trustScore": 0.040078398242798,
-      "trustors": 8,
+      "username": "conspiracy_buff",
+      "trustScore": 0.005918314307990642,
+      "trustors": 4,
       "trustees": 5,
       "interests": [
         "aliens",
-        "conspiracy",
         "government",
-        "truth"
+        "conspiracy"
+      ],
+      "communityId": 2
+    },
+    {
+      "username": "alien_hunter",
+      "trustScore": 0.022231462785630027,
+      "trustors": 4,
+      "trustees": 3,
+      "interests": [
+        "space",
+        "government"
       ],
       "communityId": 2
     },
     {
       "username": "truth_seeker",
-      "trustScore": 0.04352521753822758,
+      "trustScore": 0.032946962275844136,
       "trustors": 6,
       "trustees": 7,
       "interests": [
         "aliens",
-        "truth"
+        "UFOs",
+        "conspiracy",
+        "space"
       ],
       "communityId": 2
     },
     {
       "username": "cosmic_explorer",
-      "trustScore": 0.003244741066148517,
-      "trustors": 3,
-      "trustees": 8,
+      "trustScore": 0.026149817076827724,
+      "trustors": 2,
+      "trustees": 4,
       "interests": [
+        "UFOs",
         "conspiracy",
-        "UFOs"
+        "aliens",
+        "government"
       ],
       "communityId": 2
     },
     {
       "username": "skeptic123",
-      "trustScore": 0.008313592971192022,
-      "trustors": 3,
-      "trustees": 6,
+      "trustScore": 0.03222726454888945,
+      "trustors": 4,
+      "trustees": 7,
       "interests": [
-        "debunking",
-        "evidence",
-        "skepticism",
-        "facts"
+        "science",
+        "facts",
+        "evidence"
       ],
       "communityId": 3
     },
     {
       "username": "fact_checker",
-      "trustScore": 0.04075424516347046,
-      "trustors": 7,
-      "trustees": 3,
-      "interests": [
-        "skepticism",
-        "debunking",
-        "facts",
-        "rationality"
-      ],
-      "communityId": 3
-    },
-    {
-      "username": "rational_thinker",
-      "trustScore": 0.021357438540170644,
+      "trustScore": 0.05677695367945461,
       "trustors": 4,
-      "trustees": 3,
-      "interests": [
-        "facts",
-        "science"
-      ],
-      "communityId": 3
-    },
-    {
-      "username": "evidence_first",
-      "trustScore": 0.07880442679733038,
-      "trustors": 10,
-      "trustees": 3,
+      "trustees": 5,
       "interests": [
         "facts",
         "debunking"
@@ -176,135 +148,159 @@ const trustData = {
       "communityId": 3
     },
     {
-      "username": "reality_check",
-      "trustScore": 0.03149514235025766,
+      "username": "rational_thinker",
+      "trustScore": 0.029668339297495044,
       "trustors": 5,
-      "trustees": 8,
+      "trustees": 5,
+      "interests": [
+        "debunking",
+        "evidence"
+      ],
+      "communityId": 3
+    },
+    {
+      "username": "evidence_first",
+      "trustScore": 0.029668339297495044,
+      "trustors": 4,
+      "trustees": 4,
       "interests": [
         "skepticism",
+        "evidence",
+        "facts",
+        "debunking"
+      ],
+      "communityId": 3
+    },
+    {
+      "username": "reality_check",
+      "trustScore": 0.027989044601267457,
+      "trustors": 4,
+      "trustees": 8,
+      "interests": [
+        "debunking",
+        "facts",
         "rationality"
       ],
       "communityId": 3
     },
     {
       "username": "news_junkie",
-      "trustScore": 0.0711673565937315,
-      "trustors": 8,
-      "trustees": 7,
+      "trustScore": 0.030148137782131497,
+      "trustors": 4,
+      "trustees": 3,
       "interests": [
-        "politics",
-        "current events",
-        "news",
-        "law"
+        "law",
+        "current events"
       ],
       "communityId": 4
     },
     {
       "username": "political_analyst",
-      "trustScore": 0.04521483483990875,
-      "trustors": 11,
+      "trustScore": 0.028468843085903913,
+      "trustors": 3,
       "trustees": 6,
       "interests": [
+        "government",
         "politics",
+        "current events",
         "law"
       ],
       "communityId": 4
     },
     {
       "username": "policy_wonk",
-      "trustScore": 0.03304959026780433,
-      "trustors": 6,
-      "trustees": 8,
+      "trustScore": 0.036465484496511456,
+      "trustors": 7,
+      "trustees": 4,
       "interests": [
         "politics",
-        "policy",
-        "government"
+        "government",
+        "current events",
+        "law"
       ],
       "communityId": 4
     },
     {
       "username": "current_events",
-      "trustScore": 0.042579031849286124,
-      "trustors": 6,
+      "trustScore": 0.05597728953839386,
+      "trustors": 4,
       "trustees": 3,
       "interests": [
+        "government",
+        "policy",
         "law",
-        "politics",
-        "government"
+        "politics"
       ],
       "communityId": 4
     },
     {
       "username": "legal_eagle",
-      "trustScore": 0.04507966545577426,
-      "trustors": 5,
-      "trustees": 5,
+      "trustScore": 0.031907398892465154,
+      "trustors": 4,
+      "trustees": 7,
       "interests": [
-        "policy",
-        "politics",
-        "government",
-        "news"
+        "law",
+        "policy"
       ],
       "communityId": 4
     },
     {
       "username": "ai_ethics",
-      "trustScore": 0.04190318492861366,
-      "trustors": 4,
-      "trustees": 5,
+      "trustScore": 0.05805641630515182,
+      "trustors": 11,
+      "trustees": 6,
       "interests": [
-        "programming",
+        "science",
         "physics",
-        "space"
+        "tech"
       ],
       "communityId": 1
     },
     {
       "username": "space_fan",
-      "trustScore": 0.06555782715215003,
-      "trustors": 7,
-      "trustees": 8,
+      "trustScore": 0.05757661782051537,
+      "trustors": 5,
+      "trustees": 6,
       "interests": [
-        "programming",
-        "tech",
-        "science",
-        "space"
+        "physics",
+        "space",
+        "AI",
+        "math"
       ],
       "communityId": 1
     },
     {
       "username": "crypto_enthusiast",
-      "trustScore": 6.758469206724675e-07,
-      "trustors": 3,
-      "trustees": 3,
+      "trustScore": 0.012315627436476675,
+      "trustors": 4,
+      "trustees": 6,
       "interests": [
         "economics",
-        "crypto",
-        "trading",
-        "blockchain"
+        "finance"
       ],
       "communityId": 5
     },
     {
       "username": "physics_nerd",
-      "trustScore": 0.025344935372138205,
-      "trustors": 2,
-      "trustees": 3,
+      "trustScore": 0.08268607184982305,
+      "trustors": 8,
+      "trustees": 4,
       "interests": [
         "programming",
-        "tech",
         "physics"
       ],
       "communityId": 1
     },
     {
       "username": "math_whiz",
-      "trustScore": 0.026426290445214152,
-      "trustors": 2,
-      "trustees": 8,
+      "trustScore": 0.04214309989804281,
+      "trustors": 5,
+      "trustees": 6,
       "interests": [
-        "physics",
-        "math"
+        "science",
+        "tech",
+        "AI",
+        "space"
       ],
       "communityId": 1
     }
@@ -312,693 +308,638 @@ const trustData = {
   "relationships": [
     {
       "source": "tech_guru",
-      "target": "evidence_first",
-      "value": 22
+      "target": "math_whiz",
+      "value": 90
     },
     {
       "source": "tech_guru",
-      "target": "science_fan",
-      "value": 162
+      "target": "ai_researcher",
+      "value": 275
     },
     {
       "source": "tech_guru",
       "target": "ai_ethics",
-      "value": 166
+      "value": 68
+    },
+    {
+      "source": "tech_guru",
+      "target": "code_master",
+      "value": 127
     },
     {
       "source": "science_fan",
-      "target": "current_events",
-      "value": -53
+      "target": "ai_researcher",
+      "value": 283
     },
     {
       "source": "science_fan",
-      "target": "conspiracy_buff",
-      "value": 148
-    },
-    {
-      "source": "science_fan",
-      "target": "tech_guru",
-      "value": 222
-    },
-    {
-      "source": "science_fan",
-      "target": "policy_wonk",
-      "value": -177
+      "target": "data_analyst",
+      "value": 91
     },
     {
       "source": "science_fan",
       "target": "code_master",
-      "value": 216
-    },
-    {
-      "source": "science_fan",
-      "target": "evidence_first",
-      "value": 96
-    },
-    {
-      "source": "science_fan",
-      "target": "political_analyst",
-      "value": -219
-    },
-    {
-      "source": "science_fan",
-      "target": "skeptic123",
-      "value": -182
+      "value": 88
     },
     {
       "source": "ai_researcher",
-      "target": "tech_guru",
-      "value": 238
+      "target": "conspiracy_buff",
+      "value": 40
     },
     {
       "source": "ai_researcher",
-      "target": "math_whiz",
-      "value": 117
-    },
-    {
-      "source": "ai_researcher",
-      "target": "alien_hunter",
-      "value": 84
+      "target": "policy_wonk",
+      "value": -91
     },
     {
       "source": "ai_researcher",
       "target": "crypto_enthusiast",
-      "value": -228
+      "value": 86
     },
     {
       "source": "ai_researcher",
-      "target": "policy_wonk",
-      "value": -239
+      "target": "political_analyst",
+      "value": 71
+    },
+    {
+      "source": "ai_researcher",
+      "target": "physics_nerd",
+      "value": 248
+    },
+    {
+      "source": "ai_researcher",
+      "target": "math_whiz",
+      "value": 120
     },
     {
       "source": "ai_researcher",
       "target": "space_fan",
-      "value": 167
-    },
-    {
-      "source": "ai_researcher",
-      "target": "data_analyst",
-      "value": 72
+      "value": 168
     },
     {
       "source": "code_master",
+      "target": "crypto_enthusiast",
+      "value": -240
+    },
+    {
+      "source": "code_master",
+      "target": "cosmic_explorer",
+      "value": 84
+    },
+    {
+      "source": "code_master",
+      "target": "ai_ethics",
+      "value": 79
+    },
+    {
+      "source": "data_analyst",
+      "target": "code_master",
+      "value": 92
+    },
+    {
+      "source": "data_analyst",
+      "target": "ai_researcher",
+      "value": 259
+    },
+    {
+      "source": "data_analyst",
+      "target": "math_whiz",
+      "value": 76
+    },
+    {
+      "source": "data_analyst",
+      "target": "physics_nerd",
+      "value": 102
+    },
+    {
+      "source": "data_analyst",
+      "target": "news_junkie",
+      "value": 90
+    },
+    {
+      "source": "data_analyst",
+      "target": "current_events",
+      "value": 113
+    },
+    {
+      "source": "data_analyst",
+      "target": "space_fan",
+      "value": 169
+    },
+    {
+      "source": "data_analyst",
       "target": "policy_wonk",
-      "value": 96
+      "value": 28
     },
     {
-      "source": "code_master",
+      "source": "ufo_believer",
+      "target": "alien_hunter",
+      "value": 221
+    },
+    {
+      "source": "ufo_believer",
+      "target": "truth_seeker",
+      "value": 80
+    },
+    {
+      "source": "ufo_believer",
+      "target": "rational_thinker",
+      "value": -243
+    },
+    {
+      "source": "conspiracy_buff",
+      "target": "skeptic123",
+      "value": 27
+    },
+    {
+      "source": "conspiracy_buff",
+      "target": "physics_nerd",
+      "value": 66
+    },
+    {
+      "source": "conspiracy_buff",
+      "target": "ai_ethics",
+      "value": 60
+    },
+    {
+      "source": "conspiracy_buff",
+      "target": "ufo_believer",
+      "value": 63
+    },
+    {
+      "source": "conspiracy_buff",
+      "target": "data_analyst",
+      "value": 95
+    },
+    {
+      "source": "alien_hunter",
+      "target": "policy_wonk",
+      "value": -89
+    },
+    {
+      "source": "alien_hunter",
+      "target": "code_master",
+      "value": -250
+    },
+    {
+      "source": "alien_hunter",
+      "target": "physics_nerd",
+      "value": -130
+    },
+    {
+      "source": "truth_seeker",
+      "target": "cosmic_explorer",
+      "value": 243
+    },
+    {
+      "source": "truth_seeker",
+      "target": "space_fan",
+      "value": 120
+    },
+    {
+      "source": "truth_seeker",
+      "target": "code_master",
+      "value": 60
+    },
+    {
+      "source": "truth_seeker",
+      "target": "reality_check",
+      "value": 52
+    },
+    {
+      "source": "truth_seeker",
+      "target": "ai_ethics",
+      "value": -58
+    },
+    {
+      "source": "truth_seeker",
+      "target": "fact_checker",
+      "value": 149
+    },
+    {
+      "source": "truth_seeker",
+      "target": "data_analyst",
+      "value": -246
+    },
+    {
+      "source": "cosmic_explorer",
+      "target": "ufo_believer",
+      "value": 169
+    },
+    {
+      "source": "cosmic_explorer",
+      "target": "evidence_first",
+      "value": -236
+    },
+    {
+      "source": "cosmic_explorer",
+      "target": "truth_seeker",
+      "value": 105
+    },
+    {
+      "source": "cosmic_explorer",
+      "target": "ai_ethics",
+      "value": -84
+    },
+    {
+      "source": "skeptic123",
+      "target": "code_master",
+      "value": -177
+    },
+    {
+      "source": "skeptic123",
+      "target": "physics_nerd",
+      "value": 149
+    },
+    {
+      "source": "skeptic123",
+      "target": "fact_checker",
+      "value": 299
+    },
+    {
+      "source": "skeptic123",
+      "target": "evidence_first",
+      "value": 155
+    },
+    {
+      "source": "skeptic123",
       "target": "news_junkie",
       "value": 135
     },
     {
-      "source": "code_master",
-      "target": "ai_ethics",
-      "value": 289
-    },
-    {
-      "source": "code_master",
-      "target": "fact_checker",
-      "value": 44
-    },
-    {
-      "source": "code_master",
-      "target": "physics_nerd",
-      "value": 236
-    },
-    {
-      "source": "code_master",
-      "target": "space_fan",
-      "value": 152
-    },
-    {
-      "source": "data_analyst",
-      "target": "math_whiz",
-      "value": 274
-    },
-    {
-      "source": "data_analyst",
-      "target": "ufo_believer",
-      "value": 103
-    },
-    {
-      "source": "data_analyst",
-      "target": "science_fan",
-      "value": 196
-    },
-    {
-      "source": "data_analyst",
-      "target": "tech_guru",
-      "value": 266
-    },
-    {
-      "source": "data_analyst",
-      "target": "code_master",
-      "value": 159
-    },
-    {
-      "source": "ufo_believer",
-      "target": "political_analyst",
-      "value": -204
-    },
-    {
-      "source": "ufo_believer",
-      "target": "truth_seeker",
-      "value": 218
-    },
-    {
-      "source": "ufo_believer",
-      "target": "legal_eagle",
-      "value": 39
-    },
-    {
-      "source": "ufo_believer",
-      "target": "conspiracy_buff",
-      "value": 171
-    },
-    {
-      "source": "ufo_believer",
-      "target": "current_events",
-      "value": 148
-    },
-    {
-      "source": "ufo_believer",
-      "target": "news_junkie",
-      "value": 55
-    },
-    {
-      "source": "conspiracy_buff",
-      "target": "alien_hunter",
-      "value": 178
-    },
-    {
-      "source": "conspiracy_buff",
-      "target": "news_junkie",
-      "value": 97
-    },
-    {
-      "source": "conspiracy_buff",
-      "target": "evidence_first",
-      "value": 94
-    },
-    {
-      "source": "conspiracy_buff",
-      "target": "policy_wonk",
-      "value": 141
-    },
-    {
-      "source": "alien_hunter",
-      "target": "news_junkie",
-      "value": 106
-    },
-    {
-      "source": "alien_hunter",
-      "target": "conspiracy_buff",
-      "value": 71
-    },
-    {
-      "source": "alien_hunter",
-      "target": "policy_wonk",
-      "value": 122
-    },
-    {
-      "source": "alien_hunter",
-      "target": "fact_checker",
-      "value": -120
-    },
-    {
-      "source": "alien_hunter",
-      "target": "political_analyst",
-      "value": -107
-    },
-    {
-      "source": "truth_seeker",
-      "target": "evidence_first",
-      "value": 58
-    },
-    {
-      "source": "truth_seeker",
-      "target": "space_fan",
-      "value": 32
-    },
-    {
-      "source": "truth_seeker",
-      "target": "ai_researcher",
-      "value": -226
-    },
-    {
-      "source": "truth_seeker",
-      "target": "ai_ethics",
-      "value": -89
-    },
-    {
-      "source": "truth_seeker",
-      "target": "political_analyst",
-      "value": -163
-    },
-    {
-      "source": "truth_seeker",
-      "target": "current_events",
-      "value": 48
-    },
-    {
-      "source": "truth_seeker",
-      "target": "fact_checker",
-      "value": -109
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "ai_researcher",
-      "value": 50
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "conspiracy_buff",
-      "value": 105
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "political_analyst",
-      "value": 90
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "truth_seeker",
-      "value": 144
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "physics_nerd",
-      "value": 139
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "alien_hunter",
-      "value": 80
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "space_fan",
-      "value": 112
-    },
-    {
-      "source": "cosmic_explorer",
-      "target": "ufo_believer",
-      "value": 57
-    },
-    {
-      "source": "skeptic123",
-      "target": "evidence_first",
-      "value": 244
-    },
-    {
-      "source": "skeptic123",
-      "target": "truth_seeker",
-      "value": 29
-    },
-    {
-      "source": "skeptic123",
-      "target": "space_fan",
-      "value": 147
-    },
-    {
-      "source": "skeptic123",
-      "target": "political_analyst",
-      "value": 54
-    },
-    {
-      "source": "skeptic123",
-      "target": "crypto_enthusiast",
-      "value": -66
-    },
-    {
       "source": "skeptic123",
       "target": "reality_check",
-      "value": 233
+      "value": 88
+    },
+    {
+      "source": "skeptic123",
+      "target": "science_fan",
+      "value": -98
     },
     {
       "source": "fact_checker",
-      "target": "evidence_first",
-      "value": 224
-    },
-    {
-      "source": "fact_checker",
-      "target": "rational_thinker",
+      "target": "physics_nerd",
       "value": 134
     },
     {
       "source": "fact_checker",
-      "target": "ai_researcher",
-      "value": -113
+      "target": "code_master",
+      "value": 127
     },
     {
-      "source": "rational_thinker",
-      "target": "truth_seeker",
-      "value": 149
-    },
-    {
-      "source": "rational_thinker",
-      "target": "fact_checker",
-      "value": 207
-    },
-    {
-      "source": "rational_thinker",
-      "target": "legal_eagle",
-      "value": -129
-    },
-    {
-      "source": "evidence_first",
-      "target": "political_analyst",
-      "value": 112
-    },
-    {
-      "source": "evidence_first",
-      "target": "rational_thinker",
-      "value": 51
-    },
-    {
-      "source": "evidence_first",
-      "target": "fact_checker",
+      "source": "fact_checker",
+      "target": "ai_ethics",
       "value": 87
     },
     {
+      "source": "fact_checker",
+      "target": "evidence_first",
+      "value": 94
+    },
+    {
+      "source": "fact_checker",
+      "target": "rational_thinker",
+      "value": 252
+    },
+    {
+      "source": "rational_thinker",
+      "target": "fact_checker",
+      "value": 59
+    },
+    {
+      "source": "rational_thinker",
+      "target": "reality_check",
+      "value": 210
+    },
+    {
+      "source": "rational_thinker",
+      "target": "skeptic123",
+      "value": 160
+    },
+    {
+      "source": "rational_thinker",
+      "target": "data_analyst",
+      "value": 122
+    },
+    {
+      "source": "rational_thinker",
+      "target": "science_fan",
+      "value": 103
+    },
+    {
+      "source": "evidence_first",
+      "target": "legal_eagle",
+      "value": -63
+    },
+    {
+      "source": "evidence_first",
+      "target": "math_whiz",
+      "value": 147
+    },
+    {
+      "source": "evidence_first",
+      "target": "ai_ethics",
+      "value": -198
+    },
+    {
+      "source": "evidence_first",
+      "target": "skeptic123",
+      "value": 73
+    },
+    {
+      "source": "reality_check",
+      "target": "policy_wonk",
+      "value": 109
+    },
+    {
       "source": "reality_check",
       "target": "fact_checker",
-      "value": 265
+      "value": 203
     },
     {
       "source": "reality_check",
-      "target": "evidence_first",
-      "value": 157
-    },
-    {
-      "source": "reality_check",
-      "target": "data_analyst",
-      "value": 58
+      "target": "ufo_believer",
+      "value": -201
     },
     {
       "source": "reality_check",
       "target": "political_analyst",
-      "value": 116
-    },
-    {
-      "source": "reality_check",
-      "target": "skeptic123",
-      "value": 123
-    },
-    {
-      "source": "reality_check",
-      "target": "alien_hunter",
-      "value": -168
-    },
-    {
-      "source": "reality_check",
-      "target": "ai_researcher",
-      "value": -180
-    },
-    {
-      "source": "reality_check",
-      "target": "science_fan",
-      "value": 97
-    },
-    {
-      "source": "news_junkie",
-      "target": "cosmic_explorer",
-      "value": -228
-    },
-    {
-      "source": "news_junkie",
-      "target": "legal_eagle",
-      "value": 208
-    },
-    {
-      "source": "news_junkie",
-      "target": "current_events",
-      "value": 90
-    },
-    {
-      "source": "news_junkie",
-      "target": "alien_hunter",
       "value": 115
+    },
+    {
+      "source": "reality_check",
+      "target": "legal_eagle",
+      "value": 127
+    },
+    {
+      "source": "reality_check",
+      "target": "code_master",
+      "value": 76
+    },
+    {
+      "source": "reality_check",
+      "target": "ai_ethics",
+      "value": 122
+    },
+    {
+      "source": "reality_check",
+      "target": "truth_seeker",
+      "value": 125
     },
     {
       "source": "news_junkie",
       "target": "rational_thinker",
-      "value": 105
+      "value": -60
     },
     {
       "source": "news_junkie",
-      "target": "skeptic123",
-      "value": -150
-    },
-    {
-      "source": "news_junkie",
-      "target": "reality_check",
-      "value": -160
-    },
-    {
-      "source": "political_analyst",
-      "target": "code_master",
-      "value": 80
-    },
-    {
-      "source": "political_analyst",
-      "target": "alien_hunter",
-      "value": 63
-    },
-    {
-      "source": "political_analyst",
       "target": "current_events",
-      "value": 205
+      "value": 81
     },
     {
-      "source": "political_analyst",
-      "target": "news_junkie",
-      "value": 100
-    },
-    {
-      "source": "political_analyst",
-      "target": "ai_researcher",
-      "value": 57
-    },
-    {
-      "source": "political_analyst",
-      "target": "evidence_first",
-      "value": 150
-    },
-    {
-      "source": "policy_wonk",
-      "target": "news_junkie",
-      "value": 197
-    },
-    {
-      "source": "policy_wonk",
-      "target": "legal_eagle",
-      "value": 300
-    },
-    {
-      "source": "policy_wonk",
-      "target": "political_analyst",
-      "value": 133
-    },
-    {
-      "source": "policy_wonk",
-      "target": "space_fan",
-      "value": 128
-    },
-    {
-      "source": "policy_wonk",
+      "source": "news_junkie",
       "target": "truth_seeker",
-      "value": -131
+      "value": 102
+    },
+    {
+      "source": "political_analyst",
+      "target": "truth_seeker",
+      "value": -176
+    },
+    {
+      "source": "political_analyst",
+      "target": "tech_guru",
+      "value": 25
+    },
+    {
+      "source": "political_analyst",
+      "target": "conspiracy_buff",
+      "value": 34
+    },
+    {
+      "source": "political_analyst",
+      "target": "ufo_believer",
+      "value": -63
+    },
+    {
+      "source": "political_analyst",
+      "target": "crypto_enthusiast",
+      "value": -189
+    },
+    {
+      "source": "political_analyst",
+      "target": "data_analyst",
+      "value": -91
+    },
+    {
+      "source": "policy_wonk",
+      "target": "alien_hunter",
+      "value": 35
+    },
+    {
+      "source": "policy_wonk",
+      "target": "current_events",
+      "value": 298
     },
     {
       "source": "policy_wonk",
       "target": "crypto_enthusiast",
-      "value": -218
+      "value": 68
     },
     {
       "source": "policy_wonk",
-      "target": "evidence_first",
-      "value": 121
+      "target": "rational_thinker",
+      "value": -52
     },
     {
-      "source": "policy_wonk",
-      "target": "ai_researcher",
-      "value": 129
+      "source": "current_events",
+      "target": "policy_wonk",
+      "value": 213
     },
     {
       "source": "current_events",
       "target": "political_analyst",
-      "value": 64
+      "value": 170
     },
     {
       "source": "current_events",
       "target": "legal_eagle",
-      "value": 120
+      "value": 228
     },
     {
-      "source": "current_events",
+      "source": "legal_eagle",
+      "target": "current_events",
+      "value": 208
+    },
+    {
+      "source": "legal_eagle",
+      "target": "news_junkie",
+      "value": 152
+    },
+    {
+      "source": "legal_eagle",
+      "target": "math_whiz",
+      "value": 94
+    },
+    {
+      "source": "legal_eagle",
+      "target": "policy_wonk",
+      "value": 82
+    },
+    {
+      "source": "legal_eagle",
       "target": "tech_guru",
-      "value": 46
+      "value": 51
     },
     {
       "source": "legal_eagle",
-      "target": "rational_thinker",
-      "value": 26
-    },
-    {
-      "source": "legal_eagle",
-      "target": "science_fan",
-      "value": 100
-    },
-    {
-      "source": "legal_eagle",
-      "target": "news_junkie",
-      "value": 291
-    },
-    {
-      "source": "legal_eagle",
-      "target": "ufo_believer",
-      "value": 59
-    },
-    {
-      "source": "legal_eagle",
-      "target": "cosmic_explorer",
-      "value": 25
-    },
-    {
-      "source": "ai_ethics",
-      "target": "reality_check",
-      "value": 148
-    },
-    {
-      "source": "ai_ethics",
-      "target": "code_master",
-      "value": 289
-    },
-    {
-      "source": "ai_ethics",
       "target": "space_fan",
-      "value": 232
+      "value": -53
+    },
+    {
+      "source": "legal_eagle",
+      "target": "reality_check",
+      "value": -232
     },
     {
       "source": "ai_ethics",
-      "target": "science_fan",
-      "value": 136
-    },
-    {
-      "source": "ai_ethics",
-      "target": "cosmic_explorer",
-      "value": 23
-    },
-    {
-      "source": "space_fan",
-      "target": "political_analyst",
-      "value": 100
-    },
-    {
-      "source": "space_fan",
-      "target": "science_fan",
-      "value": 109
-    },
-    {
-      "source": "space_fan",
       "target": "alien_hunter",
-      "value": -150
+      "value": 22
+    },
+    {
+      "source": "ai_ethics",
+      "target": "ufo_believer",
+      "value": 53
+    },
+    {
+      "source": "ai_ethics",
+      "target": "legal_eagle",
+      "value": 44
+    },
+    {
+      "source": "ai_ethics",
+      "target": "skeptic123",
+      "value": 143
+    },
+    {
+      "source": "ai_ethics",
+      "target": "policy_wonk",
+      "value": 24
+    },
+    {
+      "source": "ai_ethics",
+      "target": "ai_researcher",
+      "value": 254
     },
     {
       "source": "space_fan",
-      "target": "news_junkie",
-      "value": 72
+      "target": "conspiracy_buff",
+      "value": -165
     },
     {
       "source": "space_fan",
       "target": "ai_ethics",
-      "value": 165
+      "value": 74
     },
     {
       "source": "space_fan",
       "target": "tech_guru",
-      "value": 160
+      "value": 157
     },
     {
       "source": "space_fan",
-      "target": "data_analyst",
-      "value": 298
+      "target": "physics_nerd",
+      "value": 250
     },
     {
       "source": "space_fan",
-      "target": "evidence_first",
-      "value": -120
+      "target": "ai_researcher",
+      "value": 95
+    },
+    {
+      "source": "space_fan",
+      "target": "code_master",
+      "value": 175
     },
     {
       "source": "crypto_enthusiast",
-      "target": "current_events",
-      "value": 139
+      "target": "ai_ethics",
+      "value": 69
     },
     {
       "source": "crypto_enthusiast",
-      "target": "reality_check",
+      "target": "truth_seeker",
+      "value": -151
+    },
+    {
+      "source": "crypto_enthusiast",
+      "target": "news_junkie",
+      "value": -196
+    },
+    {
+      "source": "crypto_enthusiast",
+      "target": "ufo_believer",
+      "value": -173
+    },
+    {
+      "source": "crypto_enthusiast",
+      "target": "alien_hunter",
+      "value": -113
+    },
+    {
+      "source": "crypto_enthusiast",
+      "target": "physics_nerd",
       "value": 85
     },
     {
-      "source": "crypto_enthusiast",
-      "target": "code_master",
-      "value": -164
-    },
-    {
       "source": "physics_nerd",
       "target": "tech_guru",
-      "value": 289
+      "value": 54
     },
     {
       "source": "physics_nerd",
       "target": "code_master",
-      "value": 215
+      "value": 279
     },
     {
       "source": "physics_nerd",
-      "target": "alien_hunter",
-      "value": 73
+      "target": "rational_thinker",
+      "value": 119
+    },
+    {
+      "source": "physics_nerd",
+      "target": "ai_ethics",
+      "value": 167
     },
     {
       "source": "math_whiz",
-      "target": "ai_researcher",
-      "value": 121
-    },
-    {
-      "source": "math_whiz",
-      "target": "policy_wonk",
-      "value": 130
-    },
-    {
-      "source": "math_whiz",
-      "target": "ufo_believer",
-      "value": 105
-    },
-    {
-      "source": "math_whiz",
-      "target": "fact_checker",
-      "value": -158
-    },
-    {
-      "source": "math_whiz",
-      "target": "data_analyst",
-      "value": 215
-    },
-    {
-      "source": "math_whiz",
-      "target": "reality_check",
-      "value": -174
+      "target": "space_fan",
+      "value": 263
     },
     {
       "source": "math_whiz",
       "target": "science_fan",
-      "value": 174
+      "value": 264
     },
     {
       "source": "math_whiz",
-      "target": "truth_seeker",
-      "value": 104
+      "target": "tech_guru",
+      "value": 186
+    },
+    {
+      "source": "math_whiz",
+      "target": "conspiracy_buff",
+      "value": -218
+    },
+    {
+      "source": "math_whiz",
+      "target": "evidence_first",
+      "value": 122
+    },
+    {
+      "source": "math_whiz",
+      "target": "data_analyst",
+      "value": 137
     }
   ],
   "communities": [
