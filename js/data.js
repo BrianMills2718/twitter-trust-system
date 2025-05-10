@@ -1,29 +1,45 @@
 // Trust system data
-// Auto-generated on 2025-05-10 15:14:36
+// Auto-generated on 2025-05-10 15:42:46
 // DO NOT EDIT MANUALLY
 
 const trustData = {
-  "lastUpdated": "May 10, 2025",
+  "lastUpdated": "May 10, 2025 03:42 PM",
   "users": [
     {
       "username": "Brian_J_Mills",
-      "trustScore": 0.47619047619047616,
+      "trustScore": 0.3185223451299339,
       "trustors": 0,
-      "trustees": 1,
+      "trustees": 2,
       "interests": [
-        "innovation",
-        "technology"
+        "literature",
+        "environment",
+        "social",
+        "business"
+      ],
+      "communityId": 1
+    },
+    {
+      "username": "DefenderOfBasic",
+      "trustScore": 0.33703608038418326,
+      "trustors": 1,
+      "trustees": 0,
+      "interests": [
+        "science",
+        "education",
+        "philosophy",
+        "news"
       ],
       "communityId": 1
     },
     {
       "username": "_TylerMills_",
-      "trustScore": 0.5238095238095238,
+      "trustScore": 0.344441574485883,
       "trustors": 1,
       "trustees": 0,
       "interests": [
-        "business",
-        "analysis"
+        "science",
+        "health",
+        "education"
       ],
       "communityId": 1
     }
@@ -31,8 +47,13 @@ const trustData = {
   "relationships": [
     {
       "source": "Brian_J_Mills",
+      "target": "DefenderOfBasic",
+      "value": 5.812381937190963
+    },
+    {
+      "source": "Brian_J_Mills",
       "target": "_TylerMills_",
-      "value": 10.0
+      "value": 8.137334712067348
     }
   ],
   "communities": [

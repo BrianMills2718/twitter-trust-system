@@ -1,0 +1,39 @@
+[2025-05-10 15:14:30] === Starting Twitter Trust System Collection ===
+[2025-05-10 15:14:30] Retrieving page 1...
+[2025-05-10 15:14:32] Newest tweet is from: 2025-05-10 21:39:57+00:00
+[2025-05-10 15:14:32] Retrieved 4 new tweets on page 1
+[2025-05-10 15:14:34] Retrieving page 2...
+[2025-05-10 15:14:35] No tweets found on this page
+[2025-05-10 15:14:35] Updated last tweet timestamp to: Sat May 10 21:39:57 +0000 2025
+[2025-05-10 15:14:35] Retrieved a total of 4 tweets across 2 pages
+[2025-05-10 15:14:35] Processing 4 tweets for trust commands
+[2025-05-10 15:14:35] Checking tweet 1921319321759801371 from @Brian_J_Mills
+[2025-05-10 15:14:35] Processed: @Brian_J_Mills trusts @_TylerMills_ with 70 points
+[2025-05-10 15:14:35] Checking tweet 1772656625842626683 from @ImranH_SEO
+[2025-05-10 15:14:35] No trust commands found in tweet 1772656625842626683
+[2025-05-10 15:14:35] Checking tweet 1738473370239525187 from @TPenpoem45167
+[2025-05-10 15:14:35] No trust commands found in tweet 1738473370239525187
+[2025-05-10 15:14:35] Checking tweet 1656618874639462402 from @nemutluyazilim
+[2025-05-10 15:14:35] No trust commands found in tweet 1656618874639462402
+[2025-05-10 15:14:35] Successfully saved 1 trust assignments (0 new/changed)
+[2025-05-10 15:14:35] Collection complete!
+[2025-05-10 15:14:35] - 1 trust assignments processed
+[2025-05-10 15:14:35] - 1 users in trust network
+[2025-05-10 15:14:35] - 1 total trust relationships
+[2025-05-10 15:42:44] === Starting Twitter Trust System Collection ===
+[2025-05-10 15:42:44] Will collect tweets until reaching previous timestamp: 2025-05-10 21:39:57+00:00
+[2025-05-10 15:42:44] Retrieving page 1...
+[2025-05-10 15:42:46] Newest tweet is from: 2025-05-10 22:41:03+00:00
+[2025-05-10 15:42:46] Reached previous collection point at tweet from 2025-05-10 21:39:57+00:00
+[2025-05-10 15:42:46] Retrieved 1 new tweets on page 1
+[2025-05-10 15:42:46] Stopping pagination as we've reached previous collection point
+[2025-05-10 15:42:46] Updated last tweet timestamp to: Sat May 10 22:41:03 +0000 2025
+[2025-05-10 15:42:46] Retrieved a total of 1 tweets across 1 pages
+[2025-05-10 15:42:46] Processing 1 tweets for trust commands
+[2025-05-10 15:42:46] Checking tweet 1921334696702616008 from @Brian_J_Mills
+[2025-05-10 15:42:46] Processed: @Brian_J_Mills trusts @DefenderOfBasic with 50 points
+[2025-05-10 15:42:46] Successfully saved 1 trust assignments (1 new/changed)
+[2025-05-10 15:42:46] Collection complete!
+[2025-05-10 15:42:46] - 1 trust assignments processed
+[2025-05-10 15:42:46] - 1 users in trust network
+[2025-05-10 15:42:46] - 2 total trust relationships
