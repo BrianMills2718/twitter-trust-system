@@ -1,5 +1,5 @@
 // Trust system data
-// Auto-generated on 2025-05-10 15:42:46
+// Auto-generated on 2025-05-10 15:44:04
 // DO NOT EDIT MANUALLY
 
 const trustData = {
@@ -11,10 +11,9 @@ const trustData = {
       "trustors": 0,
       "trustees": 2,
       "interests": [
-        "literature",
-        "environment",
+        "music",
         "social",
-        "business"
+        "news"
       ],
       "communityId": 1
     },
@@ -25,9 +24,9 @@ const trustData = {
       "trustees": 0,
       "interests": [
         "science",
-        "education",
-        "philosophy",
-        "news"
+        "news",
+        "literature",
+        "education"
       ],
       "communityId": 1
     },
@@ -37,9 +36,10 @@ const trustData = {
       "trustors": 1,
       "trustees": 0,
       "interests": [
-        "science",
-        "health",
-        "education"
+        "news",
+        "music",
+        "innovation",
+        "research"
       ],
       "communityId": 1
     }
