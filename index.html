@@ -72,14 +72,14 @@
                     </div>
                     <div class="card-body">
                         <p>To assign trust to another Twitter user, tweet using this format:</p>
-                        <div class="alert alert-info">
-                            <code>#trustrank @username +70</code> (assigns 70 trust points)
-                        </div>
+                        <pre><code>#trustrank @username +70</code></pre>
+                        <p>(assigns 70 trust points)</p>
                         <p>To assign distrust, use a negative value:</p>
+                        <pre><code>#trustrank @username -30</code></pre>
+                        <p>(assigns 30 distrust points)</p>
                         <div class="alert alert-info">
-                            <code>#trustrank @username -30</code> (assigns 30 distrust points)
+                            <strong>Note:</strong> Your trust ratings are automatically normalized to ensure fair influence in the network. There is no fixed trust budget.
                         </div>
-                        <p>You have a total of 1000 trust points to distribute across all users.</p>
                     </div>
                 </div>
             </div>
