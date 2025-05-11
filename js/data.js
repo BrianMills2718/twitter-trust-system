@@ -1,29 +1,37 @@
 // Trust system data
-// Auto-generated on 2025-05-11 09:43:37
+// Auto-generated on 2025-05-11 10:29:46
 // DO NOT EDIT MANUALLY
 
 const trustData = {
-  "lastUpdated": "May 11, 2025 09:41 AM",
+  "lastUpdated": "May 11, 2025 10:29 AM",
   "users": [
     {
-      "username": "Brian_J_Mills",
-      "trustScore": 0.37407400966932397,
-      "trustors": 1,
-      "trustees": 3,
-      "interests": [],
-      "communityId": 1
-    },
-    {
-      "username": "DefenderOfBasic",
-      "trustScore": 0.21079512086871444,
+      "username": "Bitboy_Crypto",
+      "trustScore": 0.09102297851732395,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
       "communityId": 1
     },
     {
+      "username": "Brian_J_Mills",
+      "trustScore": 0.3395367270094684,
+      "trustors": 1,
+      "trustees": 4,
+      "interests": [],
+      "communityId": 3
+    },
+    {
+      "username": "DefenderOfBasic",
+      "trustScore": 0.19133426929562472,
+      "trustors": 1,
+      "trustees": 0,
+      "interests": [],
+      "communityId": 3
+    },
+    {
       "username": "RepSantosNY03",
-      "trustScore": 0.09834860767512917,
+      "trustScore": 0.09056912602782413,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
@@ -31,28 +39,33 @@ const trustData = {
     },
     {
       "username": "_TylerMills_",
-      "trustScore": 0.31678226178683244,
+      "trustScore": 0.2875368991497587,
       "trustors": 1,
       "trustees": 1,
       "interests": [],
-      "communityId": 1
+      "communityId": 3
     }
   ],
   "relationships": [
     {
       "source": "Brian_J_Mills",
+      "target": "Bitboy_Crypto",
+      "value": -5.144957554275265
+    },
+    {
+      "source": "Brian_J_Mills",
       "target": "DefenderOfBasic",
-      "value": 3.333333333333333
+      "value": 2.8583097523751473
     },
     {
       "source": "Brian_J_Mills",
       "target": "RepSantosNY03",
-      "value": -6.666666666666666
+      "value": -5.716619504750295
     },
     {
       "source": "Brian_J_Mills",
       "target": "_TylerMills_",
-      "value": 6.666666666666666
+      "value": 5.716619504750295
     },
     {
       "source": "_TylerMills_",
@@ -70,6 +83,11 @@ const trustData = {
       "id": 2,
       "name": "Community B",
       "color": "#EA4335"
+    },
+    {
+      "id": 3,
+      "name": "Community C",
+      "color": "#FBBC05"
     }
   ]
 };
