@@ -1,13 +1,13 @@
 // Trust system data
-// Auto-generated on 2025-05-11 13:15:13
+// Auto-generated on 2025-05-11 13:25:12
 // DO NOT EDIT MANUALLY
 
 const trustData = {
-  "lastUpdated": "May 11, 2025 01:15 PM",
+  "lastUpdated": "May 11, 2025 01:25 PM",
   "users": [
     {
       "username": "Bitboy_Crypto",
-      "trustScore": 0.08378113113260548,
+      "trustScore": 0.07742882096739963,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
@@ -15,15 +15,15 @@ const trustData = {
     },
     {
       "username": "Brian_J_Mills",
-      "trustScore": 0.31053023497223103,
+      "trustScore": 0.28580365736788016,
       "trustors": 1,
-      "trustees": 5,
+      "trustees": 6,
       "interests": [],
       "communityId": 2
     },
     {
       "username": "Cobratate",
-      "trustScore": 0.08411934704613808,
+      "trustScore": 0.07770686577871136,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
@@ -31,23 +31,31 @@ const trustData = {
     },
     {
       "username": "DefenderOfBasic",
-      "trustScore": 0.17498710502606343,
+      "trustScore": 0.16105530272317373,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
       "communityId": 2
     },
     {
-      "username": "RepSantosNY03",
-      "trustScore": 0.08361216739299321,
+      "username": "Kylie_pol69",
+      "trustScore": 0.07868165446488469,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
       "communityId": 4
     },
     {
+      "username": "RepSantosNY03",
+      "trustScore": 0.07728989300314544,
+      "trustors": 1,
+      "trustees": 0,
+      "interests": [],
+      "communityId": 5
+    },
+    {
       "username": "_TylerMills_",
-      "trustScore": 0.2629700144299687,
+      "trustScore": 0.24203380569480495,
       "trustors": 1,
       "trustees": 1,
       "interests": [],
@@ -58,27 +66,32 @@ const trustData = {
     {
       "source": "Brian_J_Mills",
       "target": "Bitboy_Crypto",
-      "value": -4.826004826007239
+      "value": -4.677476657214644
     },
     {
       "source": "Brian_J_Mills",
       "target": "Cobratate",
-      "value": -4.318004318006477
+      "value": -4.185110693297313
     },
     {
       "source": "Brian_J_Mills",
       "target": "DefenderOfBasic",
-      "value": 2.54000254000381
+      "value": 2.461829819586655
+    },
+    {
+      "source": "Brian_J_Mills",
+      "target": "Kylie_pol69",
+      "value": -2.461829819586655
     },
     {
       "source": "Brian_J_Mills",
       "target": "RepSantosNY03",
-      "value": -5.08000508000762
+      "value": -4.92365963917331
     },
     {
       "source": "Brian_J_Mills",
       "target": "_TylerMills_",
-      "value": 5.08000508000762
+      "value": 4.92365963917331
     },
     {
       "source": "_TylerMills_",
@@ -106,6 +119,11 @@ const trustData = {
       "id": 4,
       "name": "Community D",
       "color": "#34A853"
+    },
+    {
+      "id": 5,
+      "name": "Community E",
+      "color": "#8334A4"
     }
   ]
 };
