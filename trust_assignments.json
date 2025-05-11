@@ -1,13 +1,14 @@
 {
   "assignments": {
     "Brian_J_Mills": {
-      "_TylerMills_": 70,
-      "DefenderOfBasic": 50
+      "_TylerMills_": 100,
+      "DefenderOfBasic": 50,
+      "RepSantosNY03": -100
     },
     "_TylerMills_": {
       "Brian_J_Mills": 54
     }
   },
-  "last_updated": "May 11, 2025 06:39 AM",
-  "last_tweet_time": "Sun May 11 05:42:19 +0000 2025"
+  "last_updated": "May 11, 2025 09:41 AM",
+  "last_tweet_time": "Sun May 11 15:57:09 +0000 2025"
 }
