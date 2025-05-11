@@ -48,8 +48,12 @@
                         <h3>Key Features</h3>
                         <ul>
                             <li>
-                                <strong>Limited Trust Budget:</strong> Each user has a fixed budget of 1000 trust points to distribute 
-                                among other Twitter users.
+                                <strong>Simple Rating System:</strong> Rate any Twitter user from -100 (complete distrust) 
+                                to +100 (complete trust).
+                            </li>
+                            <li>
+                                <strong>Normalized Trust Assignments:</strong> Your ratings are automatically normalized using L2 normalization 
+                                to ensure fair influence in the network, preventing any single user from dominating the system.
                             </li>
                             <li>
                                 <strong>Recursive Trust:</strong> A user's trust score depends not just on how much trust they receive, 
@@ -78,7 +82,7 @@
                         </div>
                         
                         <div class="alert alert-info">
-                            <strong>Remember:</strong> You have a total of 1000 trust points to distribute. Choose wisely!
+                            <strong>Remember:</strong> Ratings range from -100 (complete distrust) to +100 (complete trust). Your ratings are automatically normalized to ensure fair influence in the network.
                         </div>
                         
                         <h3>Trust Score Calculation</h3>
@@ -87,8 +91,10 @@
                         </p>
                         <ol>
                             <li>We create a trust matrix where each cell represents how much trust user A gives to user B.</li>
-                            <li>This matrix is normalized by row so that each user's trust assignments sum to 1.</li>
-                            <li>We iteratively calculate a vector where each user's score is based on the scores of those who trust them.</li>
+                            <li>Each user's trust assignments are normalized using L2 normalization (vector length = 1) to ensure fair influence in the network.</li>
+                            <li>Positive and negative trust are processed separately, with negative trust acting as a penalty.</li>
+                            <li>We calculate PageRank scores based on positive trust relationships.</li>
+                            <li>We apply penalties based on weighted distrust using a tanh function that creates diminishing returns for excessive distrust.</li>
                             <li>The scores converge to stable values that represent each user's global trust score.</li>
                         </ol>
                         
@@ -121,7 +127,7 @@
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Trust scores are calculated and updated once per day.
+                                        Trust scores are calculated and updated every 10 minutes.
                                     </div>
                                 </div>
                             </div>
@@ -149,6 +155,7 @@
                                     <div class="accordion-body">
                                         The eigenvector-based calculation means that trust from low-trusted accounts has minimal impact. 
                                         New accounts must first earn trust from established users before they can significantly influence the network.
+                                        Additionally, L2 normalization ensures that no single user can have an outsized influence on the system.
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 # Twitter Trust System
 
-![Trust Network Visualization](visualization/trust_network.png)
+![Trust Network Visualization](./visualization/trust_network.png)
 
 ## System Updates
 ### Manual Update
@@ -27,7 +27,6 @@ The system's behavior can be customized through the `config.json` file:
     "min": -100,
     "max": 100
   },
-  "trust_budget": 1000,
   "sybil_detection": {
     "enabled": true,
     "similarity_threshold": 0.9,
@@ -42,13 +41,13 @@ The system's behavior can be customized through the `config.json` file:
 ```
 
 ## Overview
-This project simulates an eigenvector-based reputation system for Twitter users. The system allows users to distribute a fixed "trust budget" among other users, creating a network of trust relationships. Trust scores are calculated using a PageRank-like algorithm, where a user's reputation depends on both how much trust they receive and the trustworthiness of those who trust them.
+This project implements an eigenvector-based reputation system for Twitter users. The system allows users to assign trust ratings to other users (from -100 to +100), creating a network of trust relationships. Trust scores are calculated using a PageRank-like algorithm, where a user's reputation depends on both how much trust they receive and the trustworthiness of those who trust them.
 
 ## Concept
 
 The core ideas behind this system are:
 
-1. **Limited Trust Budget**: Each user has a fixed amount of trust (e.g., 1000 points) they can distribute to others
+1. **Normalized Trust Assignments**: Each user can assign ratings from -100 to +100, which are normalized to ensure fair influence (using L2 normalization)
 2. **Weighted Influence**: A user's trust assignment carries weight proportional to their own trustworthiness
 3. **Trust Propagation**: Trust flows through the network recursively (similar to PageRank)
 4. **Community Structure**: The system naturally allows communities to form around shared interests
@@ -56,116 +55,96 @@ The core ideas behind this system are:
 
 ## Implementation
 
-The `TwitterTrustSystem` class in the provided Python code demonstrates how such a system could work. Key components include:
+The system collects trust assignments from Twitter and calculates trust scores. Key components include:
 
 ### Trust Assignment
-Users assign trust points to others, limited by their total budget:
+Users assign trust ratings to others by tweeting with the trustrank hashtag:
 ```
-#trustrank @username +100
+#trustrank @username +70
+```
+or
+```
+#trustrank @username -30
 ```
 
 ### Trust Calculation
 Trust scores are calculated using an eigenvector-based approach similar to PageRank:
-1. Trust matrix is normalized
-2. Power iteration is used to find the principal eigenvector
-3. Resulting vector represents each user's global trust score
+1. Trust ratings are normalized using L2 normalization (vector length = 1) to prevent any single user from dominating
+2. Positive and negative trust are processed separately (negative trust acts as a penalty)
+3. PageRank algorithm with appropriate damping factor is applied to find each user's global trust score
+4. Distrust penalties are applied using a tanh function to implement diminishing returns
 
 ### User Commands
-The system supports Twitter commands like:
-- `#trustrank initialize` - Set up your trust budget
-- `#trustrank @username +100` - Assign positive trust points
-- `#trustrank @username -50` - Assign negative trust points (distrust)
-- `#trustrank mystatus` - View your trust distribution
-- `#trustrank score @username` - Check someone's trust score
-- `#trustrank recommend` - Get user recommendations based on your trust network
+The system supports Twitter commands in the format:
+- `#trustrank @username +70` - Assign positive trust points
+- `#trustrank @username -30` - Assign negative trust points (distrust)
 
 ## File Structure
 The project is organized into the following files:
 
 ```
 twitter-trust-system/
-├── twitter_trust_system.py     # Main system implementation
 ├── update_trust_system.ps1     # Manual update script
 ├── schedule_task.ps1           # Task scheduler script
 ├── config.json                 # System configuration
-├── data/
-│   ├── trust_assignments.json  # User trust assignments
-│   ├── trust_scores.json       # Calculated trust scores
-│   └── community_data.json     # Community analysis results
+├── trust_assignments.json      # User trust assignments
+├── scripts/
+│   ├── collect_trust.py        # Collects trust assignments from Twitter
+│   └── calculate_trust.py      # Calculates trust scores
 ├── logs/
-│   ├── trust_log.txt           # Main system log
-│   └── runs/                   # Per-run logs with timestamps
-└── visualization/
-    └── network_viz.html        # Interactive network visualization
+│   ├── twitter_collection.log  # Collection log
+│   └── trust_calculation.log   # Calculation log
+└── js/
+    └── data.js                 # Generated data for visualization
 ```
 
 ## Logging & Monitoring
 The system maintains detailed logs to track operations and detect issues:
 
-- **Main Log**: `logs/trust_log.txt` contains system-wide events and errors
-- **Run Logs**: Individual logs in `logs/runs/` with timestamps for each execution
-- **Monitoring**: Log analysis can identify unusual patterns or system issues
+- **Collection Log**: `twitter_collection.log` records Twitter API interactions and trust assignments collected
+- **Calculation Log**: `trust_calculation.log` documents the trust calculation process
+- **Update Log**: `latest_update.log` shows when the system was last updated
 
 Log format example:
 ```
-[2025-05-11 14:32:15] INFO: System update started
-[2025-05-11 14:32:18] INFO: Retrieved 247 new tweets
-[2025-05-11 14:32:45] WARNING: Suspicious activity detected for user @potential_sybil
-[2025-05-11 14:33:02] INFO: Trust scores updated for 1,243 users
+[2025-05-11 14:32:15] Starting Twitter Trust System update process...
+[2025-05-11 14:32:18] Retrieved 247 new tweets
+[2025-05-11 14:32:45] Found 56 trust assignments
+[2025-05-11 14:33:02] Trust scores updated for 124 users
 ```
 
 ### Sybil Attack Resistance
-The code includes a simulation of a Sybil attack (creating fake accounts) to demonstrate the system's resistance to manipulation:
+The system has several features that help resist manipulation:
 - Trust only flows significantly through established users
-- Trust growth rate is limited
-- Network structure analysis can identify suspicious patterns
+- L2 normalization prevents any single user from having outsized influence
+- The recursive nature of PageRank requires attackers to first gain trust from already-trusted nodes
 
 ## Visualization
-The code can generate visualizations of the trust network, with:
+The web interface shows the trust network with:
 - Node size representing trust score
 - Edge width representing trust amount
-- Colors representing different interest communities
+- Colors representing different communities detected by the Louvain algorithm
 
 ## Community Analysis
 The system identifies natural communities and analyzes trust flow between them:
-- Groups users by shared interests
-- Calculates average trust scores by community
-- Measures trust flow between different communities
-
-## Running the Simulation
-To run the simulation:
-
-1. Ensure you have the required packages:
-   ```
-   pip install numpy networkx matplotlib tabulate pandas
-   ```
-
-2. Run the Python script:
-   ```
-   python twitter_trust_system.py
-   ```
-
-3. The output will show:
-   - Global trust rankings
-   - Example bot interactions
-   - Sybil attack simulation results
-   - Community analysis
-   - Trust network visualization
+- Groups users by shared trust patterns
+- Uses the Louvain method for community detection
+- Displays communities with distinct colors in the visualization
 
 ## Critical Assessment
-Evaluating this trust system against both our original goals and cutting-edge trust metrics research reveals several strengths and limitations:
+Evaluating this trust system against cutting-edge trust metrics research reveals several strengths and limitations:
 
 ### Strengths
-- **Eigenvector-Based Approach**: The PageRank-like algorithm correctly implements a recursive trust model, which aligns with research showing that trust should be propagated based on the trustworthiness of sources. This matches the foundations of systems like EigenTrust and Advogato.
-- **Distrust Handling**: The implementation separates positive and negative trust and applies penalties using a tanh function, which creates diminishing returns for excessive distrust. This addresses a nuanced aspect that many trust systems overlook - that trust and distrust aren't simply opposites.
-- **Community Detection**: Using the Louvain method to identify natural communities in the trust network aligns with research showing that trust tends to cluster. The generic community naming is appropriately neutral.
-- **Normalization**: The per-user normalization helps prevent Sybil attacks by limiting any individual's influence on the overall network.
+- **Eigenvector-Based Approach**: The PageRank-like algorithm correctly implements a recursive trust model, which aligns with research showing that trust should be propagated based on the trustworthiness of sources.
+- **Distrust Handling**: The implementation separates positive and negative trust and applies penalties using a tanh function, creating diminishing returns for excessive distrust.
+- **Community Detection**: Using the Louvain method to identify natural communities in the trust network aligns with research showing that trust tends to cluster.
+- **Normalization**: The L2 normalization of each user's ratings helps prevent manipulation by limiting any individual's influence.
 - **Time-Aware Collection**: Tracking tweet timestamps and only processing new content is efficient and reduces unnecessary API calls.
 
 ### Limitations
-- **Limited Context Awareness**: The system treats all trust ratings equally regardless of domain/context. Current research emphasizes that trust is highly contextual - you might trust someone about politics but not medicine. A more advanced system would incorporate topic-specific trust.
-- **Simplistic Attack Resistance**: While normalization helps, the system lacks more sophisticated Sybil attack detection. Advanced trust systems use techniques like SybilGuard or incorporate network flow constraints (like Advogato's max-flow approach).
-- **No Confidence Measures**: The system doesn't distinguish between trust based on many interactions versus few. Research in subjective logic (Jøsang) suggests trust should include uncertainty measurements.
+- **Limited Context Awareness**: The system treats all trust ratings equally regardless of domain/context. Current research emphasizes that trust is highly contextual - you might trust someone about politics but not medicine.
+- **Simplistic Attack Resistance**: While normalization helps, the system lacks more sophisticated Sybil attack detection. Advanced trust systems use techniques like SybilGuard or incorporate network flow constraints.
+- **No Confidence Measures**: The system doesn't distinguish between trust based on many interactions versus few. Research in subjective logic suggests trust should include uncertainty measurements.
 - **Static Trust Decay**: Trust statements remain equally weighted regardless of age. Modern trust systems incorporate temporal decay to give more weight to recent interactions.
 - **Limited Feedback Loop**: There's no mechanism for evaluating trust accuracy over time. Advanced systems incorporate reputation feedback to adjust trust based on actual outcomes.
 - **Centralized Structure**: The implemented system relies on a central authority to calculate trust, unlike newer decentralized approaches like those used in blockchain-based reputation systems.
@@ -263,39 +242,6 @@ def apply_time_decay(trust_assignments, decay_factor=0.5, half_life_days=90):
             decayed_assignments[source][target] = decayed_value
     
     return decayed_assignments
-```
-
-### Sybil Attack Detection
-
-```python
-# Implementation approach:
-# Add metrics to identify suspicious patterns
-def detect_sybil_patterns(trust_matrix, user_list):
-    suspicious_users = []
-    
-    # Check for abnormal in-degree distribution
-    in_degrees = np.sum(trust_matrix > 0, axis=0)
-    out_degrees = np.sum(trust_matrix > 0, axis=1)
-    
-    avg_in_degree = np.mean(in_degrees)
-    std_in_degree = np.std(in_degrees)
-    
-    # Look for users with abnormally high ratio of incoming to outgoing trust
-    for i, user in enumerate(user_list):
-        if out_degrees[i] > 0:
-            trust_ratio = in_degrees[i] / out_degrees[i]
-            
-            # Check for suspiciously similar trust assignments
-            # This can indicate fake accounts controlled by the same person
-            similarity_count = 0
-            for j in range(len(user_list)):
-                if i != j and np.corrcoef(trust_matrix[i, :], trust_matrix[j, :])[0, 1] > 0.9:
-                    similarity_count += 1
-            
-            if trust_ratio > 5 or similarity_count > 3:
-                suspicious_users.append((user, "Suspicious trust patterns"))
-    
-    return suspicious_users
 ```
 
 ## Future Enhancements
