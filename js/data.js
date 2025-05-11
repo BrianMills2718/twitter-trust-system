@@ -1,13 +1,13 @@
 // Trust system data
-// Auto-generated on 2025-05-11 10:29:46
+// Auto-generated on 2025-05-11 11:25:49
 // DO NOT EDIT MANUALLY
 
 const trustData = {
-  "lastUpdated": "May 11, 2025 10:29 AM",
+  "lastUpdated": "May 11, 2025 11:25 AM",
   "users": [
     {
       "username": "Bitboy_Crypto",
-      "trustScore": 0.09102297851732395,
+      "trustScore": 0.09086843421184354,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
@@ -15,57 +15,57 @@ const trustData = {
     },
     {
       "username": "Brian_J_Mills",
-      "trustScore": 0.3395367270094684,
+      "trustScore": 0.3395694147416043,
       "trustors": 1,
       "trustees": 4,
       "interests": [],
-      "communityId": 3
+      "communityId": 2
     },
     {
       "username": "DefenderOfBasic",
-      "trustScore": 0.19133426929562472,
-      "trustors": 1,
-      "trustees": 0,
-      "interests": [],
-      "communityId": 3
-    },
-    {
-      "username": "RepSantosNY03",
-      "trustScore": 0.09056912602782413,
+      "trustScore": 0.19135268934519706,
       "trustors": 1,
       "trustees": 0,
       "interests": [],
       "communityId": 2
     },
     {
+      "username": "RepSantosNY03",
+      "trustScore": 0.0906448809242762,
+      "trustors": 1,
+      "trustees": 0,
+      "interests": [],
+      "communityId": 3
+    },
+    {
       "username": "_TylerMills_",
-      "trustScore": 0.2875368991497587,
+      "trustScore": 0.28756458077707886,
       "trustors": 1,
       "trustees": 1,
       "interests": [],
-      "communityId": 3
+      "communityId": 2
     }
   ],
   "relationships": [
     {
       "source": "Brian_J_Mills",
       "target": "Bitboy_Crypto",
-      "value": -5.144957554275265
+      "value": -5.350520811843448
     },
     {
       "source": "Brian_J_Mills",
       "target": "DefenderOfBasic",
-      "value": 2.8583097523751473
+      "value": 2.816063585180762
     },
     {
       "source": "Brian_J_Mills",
       "target": "RepSantosNY03",
-      "value": -5.716619504750295
+      "value": -5.632127170361524
     },
     {
       "source": "Brian_J_Mills",
       "target": "_TylerMills_",
-      "value": 5.716619504750295
+      "value": 5.632127170361524
     },
     {
       "source": "_TylerMills_",
