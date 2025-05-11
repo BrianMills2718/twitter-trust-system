@@ -266,11 +266,3 @@ Current limitations of the system include:
 - Potential for polarization and echo chambers
 - Privacy considerations around publicly visible trust relationships
 
-## Implementation Strategy for Twitter
-To implement this on Twitter, the best approach would be:
-1. Start with a bot that accepts trust commands via mentions/DMs
-2. Maintain a database of trust assignments
-3. Periodically calculate and update trust scores
-4. Provide UI for users to check scores and get recommendations
-
-This would allow for a practical implementation without requiring changes to Twitter's core platform.
