@@ -1,5 +1,5 @@
 // Trust system data
-// Auto-generated on 2025-05-11 06:39:09
+// Auto-generated on 2025-05-11 07:04:26
 // DO NOT EDIT MANUALLY
 
 const trustData = {
@@ -10,12 +10,7 @@ const trustData = {
       "trustScore": 0.3395588708574098,
       "trustors": 1,
       "trustees": 2,
-      "interests": [
-        "philosophy",
-        "media",
-        "communication",
-        "travel"
-      ],
+      "interests": [],
       "communityId": 1
     },
     {
@@ -23,11 +18,7 @@ const trustData = {
       "trustScore": 0.3266321175756868,
       "trustors": 1,
       "trustees": 0,
-      "interests": [
-        "development",
-        "art",
-        "communication"
-      ],
+      "interests": [],
       "communityId": 1
     },
     {
@@ -35,10 +26,7 @@ const trustData = {
       "trustScore": 0.3338090115669034,
       "trustors": 1,
       "trustees": 1,
-      "interests": [
-        "research",
-        "communication"
-      ],
+      "interests": [],
       "communityId": 1
     }
   ],
